@@ -28,7 +28,7 @@ public class WebSocketController {
     // 내가 대화방에 들어왔을 때
  	@OnOpen
  	public void onOpen(Session session) {
-		logger.info("Open session usernickname : " + session.getId());
+ 		logger.info("Open session : " + session.getId());
  		try {
  			final Basic basic = session.getBasicRemote();
  			basic.sendText("토론방에 입장했습니다.");
