@@ -49,7 +49,7 @@
         $.ajax({
             method: 'GET', // 요청방식
             url: 'bookSearch.do',
-            async : false,
+            /* async : false, */
             data: {keyword: $('.bookSearchInput').val()} ,
             dataType: "json",
             timeout: 1000,

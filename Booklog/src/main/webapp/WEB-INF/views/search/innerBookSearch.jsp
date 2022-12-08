@@ -166,7 +166,7 @@ color: #333332;
     <div class="SearchAndResultBox">
         <div class="SearchBarBox">
             <form action="/bookSearch" method="get">
-                <input class="bookSearchInput" id="bookname" onkeyup="searchFunction()" type="search" name="book" size="30" placeholder="책 제목/저자 입력">
+                <input class="bookSearchInput" id="bookname" onkeyup="searchFunction()" onkeydown="searchFunction()" onkeypress="searchFunction()" type="search" name="book" size="30" placeholder="책 제목/저자 입력">
              </form>
         </div>
                 <div class="suggestionBox">
