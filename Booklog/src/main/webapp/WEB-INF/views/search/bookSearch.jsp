@@ -65,7 +65,7 @@
                            //리스트 동적 추가 
                            
                            for(let i = (currentPage-1)*DATA_PER_PAGE+1; i <= currentPage*DATA_PER_PAGE; i++){
-                              data.items[i]
+                              data.items[i];
                               str  = "<li class='suggestedBook'><a class='bookLink' href='";
                               str += "http://localhost:8181/search/postSearch?query="+data.items[i].isbn+"'>";
                               str += "<div class='bookImage'><img src='"+data.items[i].image+"'/></div>";
